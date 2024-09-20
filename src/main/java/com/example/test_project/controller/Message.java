@@ -4,9 +4,9 @@ import lombok.Getter;
 
 public class Message {
     @Getter
-    private String id;
-    private String name;
-    private String message;
+    private final String id;
+    private final String name;
+    private final String message;
 
     public Message(String id, String name, String message) {
         this.id = id;

@@ -10,7 +10,7 @@ import java.util.List;
 // http://localhost:8080/api/hello/{name}
 @RequestMapping("/api")
 public class HelloWorldController {
-    private List<Message> messages = new ArrayList<>();
+    private final List<Message> messages = new ArrayList<>();
 
     @GetMapping("/hello")
     public String hello(){
